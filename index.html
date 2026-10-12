@@ -32,7 +32,7 @@ h2{font-size:clamp(25px,6vw,38px);letter-spacing:.02em;text-align:center;text-wr
 :focus-visible{outline:3px solid var(--gold2);outline-offset:3px}
 .btn svg{width:22px;height:22px;flex:none}
 /* hero */
-.hero{padding:34px 0 64px;text-align:center;background:radial-gradient(120% 70% at 50% 0,#222660 0,var(--navy) 62%);overflow:hidden}
+.hero{padding:34px 0 96px;text-align:center;background:radial-gradient(120% 70% at 50% 0,#222660 0,var(--navy) 62%);overflow:hidden}
 .hero .logo{width:112px;height:112px;border-radius:50%;margin:0 auto 14px;display:block;box-shadow:0 0 0 1px var(--gold),0 14px 40px rgba(0,0,0,.5)}
 .brand{font:700 13px var(--serif);letter-spacing:.32em;color:var(--gold);margin-bottom:34px}
 .hero h1{font-size:clamp(34px,10vw,64px);letter-spacing:.015em;text-wrap:balance}
@@ -42,7 +42,8 @@ h2{font-size:clamp(25px,6vw,38px);letter-spacing:.02em;text-align:center;text-wr
 .off span{display:block;font:600 13px var(--sans);letter-spacing:.2em;margin-top:8px}
 .hero p{max-width:480px;margin:0 auto 30px;color:var(--mute)}
 .hero .btn{max-width:420px;margin:0 auto}
-.rails{position:absolute;left:0;right:0;bottom:0;height:28px;opacity:.5}
+.hero .wrap{position:relative;z-index:1}
+.rails{position:absolute;left:0;right:0;bottom:0;height:28px;opacity:.5;z-index:0;pointer-events:none}
 .in{opacity:0;transform:translateY(14px);animation:in .8s cubic-bezier(.2,.7,.2,1) forwards}
 .in:nth-child(2){animation-delay:.12s}.in:nth-child(3){animation-delay:.24s}.in:nth-child(4){animation-delay:.36s}.in:nth-child(5){animation-delay:.48s}.in:nth-child(6){animation-delay:.6s}
 @keyframes in{to{opacity:1;transform:none}}
